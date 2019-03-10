@@ -46,9 +46,9 @@ A configuration file called `aws-exports.js` will be copied to your configured s
 In your app's entry point i.e. App.js, import and load the configuration file:
 
 ```javascript
-import Amplify, { Auth } from 'aws-amplify';
-import awsmobile from './aws-exports';
-Amplify.configure(awsmobile);
+import Auth from '@aws-amplify/auth';
+import awsconfig from './aws-exports';
+Auth.configure(awsconfig);
 ```
 
 ### Manual Setup
